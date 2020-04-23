@@ -1,4 +1,5 @@
-class CatSerializer < ActiveModel::Serializer
+class CatSerializer 
+  include FastJsonapi::ObjectSerializer 
   belongs_to :owner
   attributes :name 
 end
